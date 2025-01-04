@@ -90,15 +90,52 @@
         }
 
         .about-me .portrait img {
-            max-width: 100%;
-            height: auto;
             border-radius: 50%;
+            width: 250px;  /* Shrink portrait */
+            height: 250px;
+            object-fit: cover;
+            margin-bottom: 20px; /* Add margin for spacing */
         }
 
         .about-me .info {
             flex: 2;
             padding-left: 20px;
         }
+
+        .research-interest {
+            margin-top: 30px;
+        }
+
+        .research-interest h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* News Section */
+        .news-section {
+            margin-top: 40px;
+        }
+
+        .news-section h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .news-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .news-list li {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .news-list strong {
+            font-weight: bold;
+        }
+
 
         /* New styles for Publications section */
         .publication {
@@ -177,7 +214,7 @@
             <nav>
                 <ul>
                     <li><a href="#Home">Home</a></li>
-                    <li><a href="#Research">Research</a></li>
+                    <!--<li><a href="#Research">Research</a></li>-->
                     <li><a href="#Publications">Publications</a></li>
                     
                 </ul>
@@ -194,7 +231,7 @@
                     <img src="my-portrait.png" alt="Lei Gao Portrait">
                 </div>
                 <div class="info">
-                    <p>I am Lei, a research fellow in the Department of Computer Science at University College London, under the supervision of <a href=https://subramaniansri.github.io/ target="_blank"> Prof.Sriram Subramanian </a>. 
+                    <p>I am Lei Gao(高蕾), a research fellow in the Department of Computer Science at University College London, under the supervision of <a href=https://subramaniansri.github.io/ target="_blank"> Prof.Sriram Subramanian </a>. 
                         I currently do research at <a href=https://www.ucl.ac.uk/computer-science/research/research-groups/multi-sensory-devices>Multi-Sensory Devices (MSD) Group</a>  
                           and create novel applications in HCI using acoustic levitation technique, exploring the design principles, technique solutions and future research possibilities.</p>
                          
@@ -206,19 +243,26 @@
                             <a href="LeiGao_Academic_CV_Chinese202501.pdf" target="_blank">中文简历</a>
                         </p>
                         <P>Email: lei.gao.20@ucl.ac.uk</P>
+
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="Research" class="section-spacing">
-        <div class="container">
-            <h2>My Research</h2>
-            <div class="My research">
+        <!-- Research Interest Section -->
+        <div class="research-interest">
+            <h3>Research interests</h3>
             <p>I am deeply engaged in the field of Human-Computer Interaction (HCI), with a particular emphasis on the development of innovative interactive prototypes 
                 employing advanced technologies such as Acoustic Levitation. My expertise extends to a wide range of areas including Haptics, 
                 Virtual/Augmented/Extended Reality (VR/AR/XR) systems, and using data-driven methods in creating efficient and impactful applications.</p>
-            </div>
+        </div>
+        <!-- New Section: News -->
+        <div class="news-section">
+            <h3>Latest News</h3>
+            <ul class="news-list">
+                <li><strong>December 2 2024:</strong> I offically started as a research fellow in UCL, new adventures ahead !</li>
+                <li><strong>November 18 2024:</strong> I got my PhD award and my thesis was online ! "Designing and Prototyping Applications Using Acoustophoretic Interfaces".</li>
+                <li><strong>October 18 2024:</strong> I successfully defended my PhD thesis and deeply appreciated my thesis committee members <a href=https://research-information.bris.ac.uk/en/persons/mike-fraser target="_blank">Mike Fraser</a> and <a href=https://profiles.ucl.ac.uk/93101-elia-gatti target="_blank">Elia Gatti </a> for their insightful feedback and valuable discussions. Also, huge thanks to my amazing supervisors <a href=https://subramaniansri.github.io/ target="_blank">Sriram Subramanian </a> and <a href=https://profiles.ucl.ac.uk/78485-diego-martinez-plasencia target="_blank">Diego Martinez Plasencia</a> for supporting and encourging me during this journey.</li>
+            </ul>
+        </div>
         </div>
     </section>
 
