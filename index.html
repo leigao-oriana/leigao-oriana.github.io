@@ -150,9 +150,15 @@
 
         .publication .pub-figure {
             flex: 1;
-            width: 250px; /* Fixed width for the figure */
+            width: auto;
+            max-width: 350px; /* Fixed width for the figure */
             height: 200px; /* Fixed height for the figure */
             text-align: center;
+            overflow: hidden; /*prevents the overflow issues*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             
         }
 
@@ -271,6 +277,19 @@
             <h2>Publications</h2>
 
             
+            <div class="publication">
+                <div class="pub-figure">
+                   
+                    <img src="ComputationalGastronomy_overview.png" alt="ComGas">
+                </div>
+                <div class="pub-info">
+                    <p class="title">Computational Gastronomy and Eating with Acoustophoresis</p>
+                    <p class="authors"><span class="highlight">Lei Gao</span>, Yutaka Tokuda, Shubhi Bansal, Sriram Subramanian.</p>
+                    <p class="venue">Companion Proceedings of the 26th International Conference on Multimodal Interaction <span class="highlight">(ICMI Companion 2024)</span></p>
+                    <p><a href="https://doi.org/10.1145/3686215.3686218" target="_blank">Paper</a> </p>
+                </div>
+            </div>
+
             <div class="publication">
                 <div class="pub-figure">
                    
