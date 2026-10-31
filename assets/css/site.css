@@ -1,0 +1,73 @@
+/* Shared foundations */
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1rem; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.65;
+    color: #242424;
+    background: #f4f4f4;
+}
+a { color: #96320f; text-underline-offset: .18em; }
+a:hover { color: #6d240b; }
+a:focus-visible { outline: 3px solid #185a9d; outline-offset: 4px; border-radius: 2px; }
+img { display: block; max-width: 100%; height: auto; }
+.container { width: min(90%, 1120px); margin-inline: auto; }
+.skip-link { position: absolute; top: .5rem; left: 1rem; padding: .75rem 1rem; background: white; z-index: 10; transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+main:focus { outline: none; }
+h2 { font-size: 1.75rem; line-height: 1.3; }
+/* Header and navigation */
+header { padding: 1rem 0; background: #f8f8f7; border-bottom: 1px solid #dededb; }
+header .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+header h1 { margin: 0; font-size: 1.5rem; line-height: 1.2; }
+header .highlight { color: #a63812; }
+header ul { display: flex; flex-wrap: wrap; gap: .25rem 1rem; list-style: none; padding: 0; margin: 0; }
+header nav a { display: inline-flex; align-items: center; min-height: 44px; padding: .5rem; color: #242424; text-decoration: none; font-size: .9375rem; font-weight: 600; }
+header nav a:hover { color: #96320f; text-decoration: underline; }
+/* Biography and news */
+.section-spacing { margin: 1.5rem 0 2.5rem; }
+.about-me { display: flex; align-items: center; gap: 2rem; margin-top: 1.5rem; }
+.portrait { flex: 0 0 250px; }
+.portrait img { width: 250px; height: 250px; object-fit: cover; border-radius: 50%; }
+.info { flex: 1; min-width: 0; font-size: 1.0625rem; overflow-wrap: anywhere; }
+.profile-heading { margin-bottom: 1.5rem; }
+.profile-name { margin: 0 0 .75rem; font-size: clamp(2rem, 4vw, 2.5rem); line-height: 1.2; }
+.profile-position { padding-left: 1rem; border-left: 3px solid #a63812; }
+.profile-title { margin: 0; font-size: 1.125rem; font-weight: 700; line-height: 1.4; }
+.profile-affiliation { margin: .35rem 0 0; line-height: 1.5; }
+.news-section { margin-top: 2.5rem; }
+.news-section h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+.news-list { padding-left: 1.5rem; }
+.news-list li { margin-bottom: .75rem; }
+/* Publications */
+#Publications { padding-bottom: 2rem; }
+.publication { display: flex; align-items: center; gap: 1.5rem; margin: 1.5rem 0; padding: 1.25rem; background: #e8e8e8; border-radius: 8px; }
+.pub-figure { flex: 0 1 320px; min-width: 0; }
+.pub-figure img { width: 100%; border-radius: 6px; }
+.pub-info { flex: 2; min-width: 0; overflow-wrap: anywhere; }
+.pub-info .title { margin: 0 0 .5rem; font-size: 1.25rem; line-height: 1.4; }
+.pub-info .authors { margin: .5rem 0; font-size: .9375rem; }
+.pub-info .venue { margin: .5rem 0; font-style: italic; }
+.pub-info .highlight { color: #96320f; font-weight: 700; }
+.pub-info p:last-child { margin-bottom: 0; }
+.pub-info a { display: inline-block; padding-block: .5rem; }
+@media (max-width: 760px) {
+    .about-me { flex-direction: column; align-items: stretch; gap: 1.25rem; }
+    .portrait { flex: none; align-self: center; }
+    .portrait img { width: min(250px, 65vw); height: auto; aspect-ratio: 1; }
+    .publication { flex-direction: column; align-items: stretch; gap: 1rem; }
+    .pub-figure { flex: none; width: 100%; max-width: 420px; align-self: center; }
+}
+@media (max-width: 420px) {
+    .container { width: 92%; }
+    header .container { align-items: flex-start; flex-direction: column; gap: .5rem; }
+    .publication { padding: 1rem; }
+}
+
+/* Curriculum vitae */
+.cv-section { margin-top: 2.5rem; }
+.cv-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.cv-links a { display: inline-flex; align-items: center; gap: .75rem; min-height: 44px; padding: .75rem 1.25rem; background: #fff; border: 1px solid #d8d8d5; border-radius: 6px; font-weight: 600; text-decoration: none; }
+.cv-links a:hover { background: #f0e8e3; border-color: #96320f; }
+.file-type { font-size: .75rem; color: #555; font-weight: 400; }
